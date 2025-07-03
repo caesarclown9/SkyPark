@@ -1,19 +1,19 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useAsyncData } from '@/hooks';
-import { logApiError, logUserAction } from '@/lib/logger';
-import { Card } from '@/components/ui/Card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { useAsyncData } from '../../../hooks';
+import { logApiError, logUserAction } from '../../../lib/logger';
+import { Card } from '../../../components/ui/Card';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../components/ui/tabs';
 import { CalendarDays, Ticket, CreditCard, Shield, Bell, Settings, Users, MapPin, Star, Gift } from 'lucide-react';
-import BookingCard from '@/components/booking/BookingCard';
-import TicketCard from '@/components/tickets/TicketCard';
-import PaymentHistory from '@/components/payment/PaymentHistory';
-import PageWrapper from '@/components/layout/PageWrapper';
-import { useAuthStore } from '@/stores/useAuthStore';
-import { bookingService } from '@/services/bookingService';
-import { ticketService } from '@/services/ticketService';
-import { notificationService } from '@/services/notificationService';
+import BookingCard from '../../../components/booking/BookingCard';
+import TicketCard from '../../../components/tickets/TicketCard';
+import PaymentHistory from '../../../components/payment/PaymentHistory';
+import PageWrapper from '../../../components/layout/PageWrapper';
+import { useAuthStore } from '../../../stores/useAuthStore';
+import { bookingService } from '../../../services/bookingService';
+import { ticketService } from '../../../services/ticketService';
+import { notificationService } from '../../../services/notificationService';
 import Link from 'next/link';
 
 interface Booking {
