@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Park } from '@skypark/shared/types';
+import { Park } from '@/types';
 import { parkService } from '../../services/parkService';
 import { ParkCard } from './ParkCard';
 import { Card } from '../ui/Card';

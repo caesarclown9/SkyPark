@@ -6,7 +6,7 @@ import { logApiError } from '@/lib/logger';
 import TicketList from '@/components/tickets/TicketList';
 import { ticketService } from '@/services/ticketService';
 import { useAuthStore } from '@/stores/useAuthStore';
-import { Ticket, TicketHistoryEntry } from '@skypark/shared/types';
+import { Ticket, TicketHistoryEntry } from '@/types';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import PageWrapper from '@/components/layout/PageWrapper';
 import { 

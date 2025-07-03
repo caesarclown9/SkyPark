@@ -2,7 +2,7 @@ import type {
   Park, 
   APIResponse,
   PaginatedResponse 
-} from '@skypark/shared/types';
+} from '@/types';
 
 interface ParkFilters {
   district?: string;

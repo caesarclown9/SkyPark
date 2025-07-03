@@ -1,12 +1,16 @@
 [build]
   # Указываем что нужно собирать веб-приложение
   base = "apps/web"
-  publish = "apps/web/.next"
-  command = "npm run build:netlify"
+  command = "npm install && npm run build"
+  publish = ".next"
 
 [build.environment]
   # Node.js версия
   NODE_VERSION = "18"
+  # NPM версия
+  NPM_VERSION = "9"
+  # Node.js окружение
+  NODE_ENV = "production"
   # Включаем экспорт статики
   NEXT_PUBLIC_NETLIFY_DEPLOY = "true"
   # Demo режим для Netlify
@@ -41,4 +45,13 @@
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "origin-when-cross-origin"
-    X-XSS-Protection = "1; mode=block" 
+    X-XSS-Protection = "1; mode=block"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[dev]
+  command = "npm run dev"
+  port = 3000
+  targetPort = 3000
+  autoLaunch = false 

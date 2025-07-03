@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { Park } from '@skypark/shared/types';
+import { Park } from '@/types';
 import { parkService } from '../../services/parkService';
 import { Card } from '../ui/Card';
 import { Button } from '../ui/Button';

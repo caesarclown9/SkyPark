@@ -27,10 +27,7 @@
       "@/stores/*": ["./stores/*"],
       "@/services/*": ["./services/*"],
       "@/app/*": ["./app/*"],
-      "@skypark/shared": ["../../packages/shared/src/index"],
-      "@skypark/shared/*": ["../../packages/shared/src/*"],
-      "@skypark/shared/types": ["../../packages/shared/src/types/index"],
-      "@skypark/shared/types/*": ["../../packages/shared/src/types/*"]
+      "@/types/*": ["./types/*"]
     },
     // Type checking - смягченные настройки для продакшена
     "noUnusedLocals": false,

@@ -1,4 +1,4 @@
-import type { Park, User, Booking, Ticket, Payment, Review } from '@skypark/shared/types';
+import type { Park, User, Booking, Ticket, Payment, Review } from '@/types';
 
 // Mock данные парков Sky Park в Бишкеке
 export const mockParks: Park[] = [

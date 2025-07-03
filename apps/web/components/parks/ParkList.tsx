@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useMemo, useCallback } from 'react';
-import { Park } from '@skypark/shared/types';
+import { Park } from '@/types';
 import { parkService, ParkFilters, BishkekDistrict } from '../../services/parkService';
 import { ParkCard } from './ParkCard';
 import { Button } from '../ui/Button';

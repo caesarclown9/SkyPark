@@ -5,7 +5,7 @@ import { ParkList } from '@/components/parks/ParkList';
 import { RecommendedParks } from '@/components/parks/RecommendedParks';
 import PageWrapper from '@/components/layout/PageWrapper';
 import { parkService } from '@/services/parkService';
-import { Park } from '@skypark/shared/types';
+import { Park } from '@/types';
 import { MapPin, Search, Filter, Star, Clock, Shield } from 'lucide-react';
 import { useAsyncData } from '@/hooks';
 

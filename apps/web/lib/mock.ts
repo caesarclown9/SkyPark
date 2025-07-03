@@ -1,4 +1,4 @@
-import type { Park } from '@skypark/shared/types';
+import type { Park } from '@/types';
 
 export const mockParks: Park[] = [
   {

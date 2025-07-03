@@ -2,7 +2,7 @@ import type {
   Park, 
   APIResponse,
   PaginatedResponse 
-} from '@skypark/shared/types';
+} from '@/types';
 import { mockParks, mockDistricts, mockDelay, searchParks, filterByDistrict, sortParks } from '../lib/mock';
 
 interface ParkFilters {

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import { Park } from '@skypark/shared/types';
+import { Park } from '@/types';
 import { parkService } from '@/services/parkService';
 import { ParkDetails } from '@/components/parks/ParkDetails';
 

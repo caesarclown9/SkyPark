@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Park } from '@skypark/shared/types';
+import { Park } from '@/types';
 import { Card } from '../ui/Card';
 import { Button } from '../ui/Button';
 import { parkService } from '../../services/parkService';

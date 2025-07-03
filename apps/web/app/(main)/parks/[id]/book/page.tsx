@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import { Park } from '@skypark/shared/types';
+import { Park } from '@/types';
 import { parkService } from '@/services/parkService';
 import BookingForm from '@/components/booking/BookingForm';
 import { ArrowLeft } from 'lucide-react';

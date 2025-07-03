@@ -1,1537 +1,1024 @@
 {
   "version": "6.0",
   "nxVersion": "17.3.2",
-  "deps": {
-    "@commitlint/cli": "^18.4.3",
-    "@commitlint/config-conventional": "^18.4.3",
-    "@nx/js": "^21.2.2",
-    "@nx/linter": "^19.8.4",
-    "@nx/next": "^21.2.2",
-    "@nx/workspace": "^21.2.2",
-    "@typescript-eslint/eslint-plugin": "^6.15.0",
-    "@typescript-eslint/parser": "^6.15.0",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "husky": "^8.0.3",
-    "lint-staged": "^15.2.0",
-    "nx": "^17.3.2",
-    "prettier": "^3.1.1",
-    "typescript": "^5.3.3",
-    "vitepress": "^1.0.0"
-  },
+  "deps": {},
   "pathMappings": {},
   "nxJsonPlugins": [],
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "scripts/dev-start.ps1",
-        "hash": "17292717371436769595"
-      },
-      {
-        "file": ".bmad-core/tasks/correct-course.md",
-        "hash": "445739732324681032"
-      },
-      {
-        "file": ".bmad-core/templates/story-tmpl.md",
-        "hash": "9028945527282560320"
-      },
-      {
-        "file": ".bmad-core/agent-teams/team-ide-minimal.yml",
-        "hash": "4063856261287734032"
-      },
-      {
-        "file": ".bmad-core/checklists/story-draft-checklist.md",
-        "hash": "12121086325866389674"
-      },
-      {
-        "file": "web-bundles/teams/team-fullstack.txt",
-        "hash": "9541727308458490338"
-      },
-      {
-        "file": "web-bundles/agents/bmad-orchestrator.txt",
-        "hash": "2353485623502670786"
-      },
-      {
-        "file": ".bmad-core/agent-teams/team-all.yml",
-        "hash": "4768717523727877546"
-      },
-      {
-        "file": ".claude/commands/bmad-master.md",
-        "hash": "18104141132065013979"
-      },
-      {
-        "file": ".bmad-core/checklists/change-checklist.md",
-        "hash": "3103304462636179812"
-      },
-      {
-        "file": ".bmad-core/tasks/execute-checklist.md",
-        "hash": "3022133633770493768"
-      },
-      {
-        "file": "scripts/dev-setup.ps1",
-        "hash": "10557952359193065852"
-      },
-      {
-        "file": "web-bundles/agents/bmad-master.txt",
-        "hash": "8442094616271926518"
-      },
-      {
-        "file": ".bmad-core/workflows/brownfield-service.yml",
-        "hash": "17560756063545300354"
-      },
-      {
-        "file": ".bmad-core/agents/po.md",
-        "hash": "4392624591199992000"
-      },
-      {
-        "file": ".claude/commands/ux-expert.md",
-        "hash": "12820140148491691260"
-      },
-      {
-        "file": ".bmad-core/data/bmad-kb.md",
-        "hash": "522945822649510433"
-      },
-      {
-        "file": "README_DEMO.md",
-        "hash": "4561068379617044902"
-      },
-      {
-        "file": "web-bundles/agents/qa.txt",
-        "hash": "8177151646310436205"
-      },
-      {
-        "file": ".bmad-core/workflows/brownfield-ui.yml",
-        "hash": "5658865642125966613"
-      },
-      {
-        "file": "docs/prd.md",
-        "hash": "9422145526549897416"
-      },
-      {
-        "file": "web-bundles/expansion-packs/bmad-2d-phaser-game-dev/agents/game-sm.txt",
-        "hash": "1553982106441080686"
-      },
-      {
-        "file": "docs/api-specification.md",
-        "hash": "12098953518052364120"
-      },
-      {
-        "file": "docs/bmad-next-steps.md",
-        "hash": "17832633718391646210"
-      },
-      {
-        "file": ".bmad-core/agents/analyst.md",
-        "hash": "1425827332768969576"
-      },
-      {
-        "file": ".bmad-core/checklists/pm-checklist.md",
-        "hash": "1549985345972587606"
-      },
-      {
-        "file": "docs/project-structure.md",
-        "hash": "9871577978578708735"
-      },
-      {
-        "file": ".bmad-core/agents/bmad-master.md",
-        "hash": "11782881777146521966"
-      },
-      {
-        "file": ".bmad-core/tasks/create-doc.md",
-        "hash": "1413685922061672841"
-      },
-      {
-        "file": ".claude/commands/architect.md",
-        "hash": "14305683530431809109"
-      },
-      {
-        "file": ".bmad-core/core-config.yml",
-        "hash": "5335194460376822961"
-      },
-      {
-        "file": "docs/backend-architecture.md",
-        "hash": "6256656873176681507"
-      },
-      {
-        "file": ".bmad-core/agents/dev.md",
-        "hash": "9988487909325581301"
-      },
-      {
-        "file": ".bmad-core/tasks/brownfield-create-epic.md",
-        "hash": "17722509943214226637"
-      },
-      {
-        "file": ".bmad-core/checklists/po-master-checklist.md",
-        "hash": "10476211924413140908"
-      },
-      {
-        "file": ".cursor/rules/bmad-orchestrator.mdc",
-        "hash": "4441932719062889079"
-      },
-      {
-        "file": ".bmad-core/workflows/greenfield-service.yml",
-        "hash": "6824859767591164817"
-      },
-      {
-        "file": ".bmad-core/tasks/index-docs.md",
-        "hash": "4662986920490171441"
-      },
-      {
-        "file": ".bmad-core/workflows/greenfield-fullstack.yml",
-        "hash": "6349633131219142863"
-      },
-      {
-        "file": ".bmad-core/tasks/advanced-elicitation.md",
-        "hash": "7105862244048556863"
-      },
-      {
-        "file": "web-bundles/teams/team-all.txt",
-        "hash": "4101723335615191338"
-      },
-      {
-        "file": ".cursor/rules/sm.mdc",
-        "hash": "12340706898763452469"
-      },
-      {
-        "file": "web-bundles/agents/po.txt",
-        "hash": "387632586812184100"
-      },
-      {
         "file": "apps/api/Dockerfile",
         "hash": "7447402465126261872"
       },
       {
-        "file": "apps/api/migrations/001_initial_schema.up.sql",
-        "hash": "11344702199468301649"
-      },
-      {
-        "file": ".bmad-core/tasks/brownfield-create-story.md",
-        "hash": "1023390254117299547"
-      },
-      {
-        "file": ".bmad-core/templates/prd-tmpl.md",
-        "hash": "4929211100164419294"
-      },
-      {
-        "file": "env.example",
-        "hash": "14003207406979056245"
-      },
-      {
-        "file": ".cursor/rules/analyst.mdc",
-        "hash": "2942818875756384736"
-      },
-      {
-        "file": "apps/api/internal/models/types.go",
-        "hash": "11640580680609871304"
-      },
-      {
-        "file": ".bmad-core/tasks/kb-mode-interaction.md",
-        "hash": "14069625296624146716"
-      },
-      {
-        "file": "web-bundles/expansion-packs/bmad-creator-tools/agents/bmad-the-creator.txt",
-        "hash": "4720744076296421015"
-      },
-      {
-        "file": ".bmad-core/agents/pm.md",
-        "hash": "14203174319011974127"
-      },
-      {
-        "file": ".cursor/rules/architect.mdc",
-        "hash": "3894699219936143635"
-      },
-      {
-        "file": "package.json",
-        "hash": "2133567640038149143"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "6751747972276968641"
-      },
-      {
-        "file": "apps/api/migrations/001_initial_schema.down.sql",
-        "hash": "848244914752494896"
-      },
-      {
-        "file": "apps/api/scripts/init-db.sh",
-        "hash": "10886807421808926400"
-      },
-      {
-        "file": "web-bundles/expansion-packs/bmad-2d-phaser-game-dev/agents/game-developer.txt",
-        "hash": "9037879605527566015"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "8601486876628202201"
-      },
-      {
-        "file": "web-bundles/teams/team-ide-minimal.txt",
-        "hash": "2125978878307828482"
-      },
-      {
-        "file": "apps/api/internal/auth/middleware.go",
-        "hash": "9801984809320801036"
-      },
-      {
-        "file": ".claude/commands/bmad-orchestrator.md",
-        "hash": "18065218067241450644"
-      },
-      {
-        "file": ".bmad-core/templates/competitor-analysis-tmpl.md",
-        "hash": "5551742410949255668"
-      },
-      {
-        "file": ".cursor/mcp.json",
-        "hash": "10534719945417681160"
-      },
-      {
-        "file": ".bmad-core/templates/front-end-spec-tmpl.md",
-        "hash": "6453823570525453142"
-      },
-      {
-        "file": "docs/development-workflow.md",
-        "hash": "6669710158342657484"
-      },
-      {
-        "file": ".claude/commands/pm.md",
-        "hash": "9820780533415619713"
-      },
-      {
-        "file": ".claude/commands/analyst.md",
-        "hash": "8708494506145655465"
-      },
-      {
-        "file": ".cursor/rules/qa.mdc",
-        "hash": "10057787497074402548"
-      },
-      {
-        "file": "apps/api/pkg/config/database.go",
-        "hash": "5666273592625115703"
-      },
-      {
-        "file": "docs/database-schema.md",
-        "hash": "14527305286163001245"
-      },
-      {
-        "file": "database-setup.sql",
-        "hash": "6174747960264044161"
-      },
-      {
-        "file": "DEMO.md",
-        "hash": "18164486227812464591"
-      },
-      {
-        "file": "docs/infrastructure-setup.md",
-        "hash": "4068303055118212945"
-      },
-      {
-        "file": "web-bundles/expansion-packs/bmad-2d-phaser-game-dev/teams/phaser-2d-nodejs-game-team.txt",
-        "hash": "16158295768184336287"
-      },
-      {
-        "file": "web-bundles/agents/pm.txt",
-        "hash": "12665020016533315735"
-      },
-      {
-        "file": ".bmad-core/agents/qa.md",
-        "hash": "14876956160490156267"
-      },
-      {
-        "file": "apps/api/internal/park/service.go",
-        "hash": "6148035872368837014"
-      },
-      {
-        "file": ".cursor/rules/po.mdc",
-        "hash": "17524546753730641149"
-      },
-      {
-        "file": "apps/api/internal/park/handlers.go",
-        "hash": "7556954767855741349"
-      },
-      {
-        "file": ".cursor/rules/bmad-master.mdc",
-        "hash": "13913395320911003"
-      },
-      {
-        "file": ".bmad-core/templates/market-research-tmpl.md",
-        "hash": "17985261253331996673"
-      },
-      {
-        "file": ".bmad-core/tasks/generate-ai-frontend-prompt.md",
-        "hash": "5735414669610868932"
-      },
-      {
-        "file": "scripts/dev-stop.ps1",
-        "hash": "9133653482837968180"
-      },
-      {
-        "file": ".bmad-core/data/technical-preferences.md",
-        "hash": "4399453671753393601"
-      },
-      {
-        "file": "apps/api/internal/auth/handlers.go",
-        "hash": "11903224960247259220"
-      },
-      {
-        "file": ".claude/commands/dev.md",
-        "hash": "8597677056969759049"
-      },
-      {
-        "file": "web-bundles/teams/team-no-ui.txt",
-        "hash": "5394767766207616820"
-      },
-      {
-        "file": ".bmad-core/templates/fullstack-architecture-tmpl.md",
-        "hash": "10837306497705793325"
-      },
-      {
-        "file": ".bmad-core/utils/template-format.md",
-        "hash": "3153827118336956642"
-      },
-      {
-        "file": ".bmad-core/workflows/brownfield-fullstack.yml",
-        "hash": "6074379602921241416"
-      },
-      {
-        "file": ".bmad-core/agents/sm.md",
-        "hash": "16152549592803377261"
-      },
-      {
-        "file": ".cursor/rules/pm.mdc",
-        "hash": "1095960752211147861"
-      },
-      {
-        "file": ".bmad-core/tasks/shard-doc.md",
-        "hash": "6073842699219087038"
-      },
-      {
-        "file": ".bmad-core/checklists/story-dod-checklist.md",
-        "hash": "14028943046937382362"
-      },
-      {
-        "file": "docs/frontend-specification.md",
-        "hash": "16508819214059760153"
-      },
-      {
-        "file": ".bmad-core/workflows/greenfield-ui.yml",
-        "hash": "8823310211538846515"
-      },
-      {
-        "file": "apps/api/internal/booking/service.go",
-        "hash": "12683928579976243940"
-      },
-      {
-        "file": "README.md",
-        "hash": "18045814481648493510"
-      },
-      {
-        "file": ".bmad-core/templates/brownfield-prd-tmpl.md",
-        "hash": "8745902704784326996"
-      },
-      {
-        "file": "apps/api/go.mod",
-        "hash": "569669181801388519"
-      },
-      {
-        "file": "apps/api/internal/booking/handlers.go",
-        "hash": "16564639953958869802"
-      },
-      {
-        "file": "apps/api/internal/auth/jwt.go",
-        "hash": "10326920879959092782"
-      },
-      {
-        "file": "apps/api/cmd/api/main.go",
-        "hash": "9804654244452961432"
-      },
-      {
-        "file": "docs/index.md",
-        "hash": "18178235304952660947"
-      },
-      {
-        "file": ".claude/commands/qa.md",
-        "hash": "3004204032671680267"
+        "file": "apps/web/components/payment/PaymentForm.tsx",
+        "hash": "17778165152971300938"
       },
       {
         "file": ".bmad-core/tasks/create-deep-research-prompt.md",
         "hash": "8313792924568871970"
       },
       {
-        "file": "web-bundles/agents/sm.txt",
-        "hash": "17876668868295277844"
+        "file": "apps/web/services/parkService.mock.ts",
+        "hash": "7072969707413396813"
       },
       {
-        "file": ".bmad-core/agents/architect.md",
-        "hash": "15951196362593817899"
+        "file": "web-bundles/teams/team-no-ui.txt",
+        "hash": "5394767766207616820"
       },
       {
-        "file": ".bmad-core/agent-teams/team-fullstack.yml",
-        "hash": "2438951786148767265"
+        "file": "packages/shared/src/types/park.ts",
+        "hash": "10115029271138599066"
       },
       {
-        "file": ".claude/commands/po.md",
-        "hash": "10136073140387859954"
+        "file": "packages/shared/src/types/api.ts",
+        "hash": "7962217100179960293"
       },
       {
-        "file": ".bmad-core/agents/bmad-orchestrator.md",
-        "hash": "12487902888762192104"
+        "file": "apps/web/services/bookingService.ts",
+        "hash": "7337973433378817627"
       },
       {
-        "file": ".claude/commands/sm.md",
-        "hash": "13091596424583452399"
+        "file": "apps/web/services/adminService.ts",
+        "hash": "917573503307173317"
       },
       {
-        "file": "netlify.toml",
-        "hash": "15671729651128918017"
+        "file": "packages/shared/src/index.ts",
+        "hash": "9605577563759515713"
       },
       {
-        "file": ".bmad-core/agents/ux-expert.md",
-        "hash": "13167522112228361854"
+        "file": ".cursor/rules/bmad-master.mdc",
+        "hash": "13913395320911003"
       },
       {
-        "file": ".bmad-core/templates/front-end-architecture-tmpl.md",
-        "hash": "15695692578148247921"
+        "file": ".cursor/rules/qa.mdc",
+        "hash": "10057787497074402548"
       },
       {
-        "file": ".bmad-core/tasks/document-project.md",
-        "hash": "17549898705685211669"
-      },
-      {
-        "file": "web-bundles/agents/ux-expert.txt",
-        "hash": "14332714336218960116"
-      },
-      {
-        "file": "apps/api/internal/auth/sms.go",
-        "hash": "12000436726940769425"
-      },
-      {
-        "file": "web-bundles/agents/architect.txt",
-        "hash": "14693132674100864715"
-      },
-      {
-        "file": "scripts/dev-build.ps1",
-        "hash": "1192954018092834063"
-      },
-      {
-        "file": ".bmad-core/tasks/brainstorming-techniques.md",
-        "hash": "2179944316025252331"
-      },
-      {
-        "file": "web-bundles/agents/analyst.txt",
-        "hash": "7088732117487932147"
-      },
-      {
-        "file": ".bmad-core/templates/architecture-tmpl.md",
-        "hash": "13159817830099568987"
-      },
-      {
-        "file": ".cursor/rules/ux-expert.mdc",
-        "hash": "16622853762879108151"
-      },
-      {
-        "file": ".bmad-core/tasks/review-story.md",
-        "hash": "13606440757751446981"
-      },
-      {
-        "file": ".cursor/rules/dev.mdc",
-        "hash": "9105972924494461623"
-      },
-      {
-        "file": ".bmad-core/agent-teams/team-no-ui.yml",
-        "hash": "8573075555491031755"
-      },
-      {
-        "file": ".bmad-core/install-manifest.yml",
-        "hash": "2233043960343395476"
-      },
-      {
-        "file": ".bmad-core/templates/brownfield-architecture-tmpl.md",
-        "hash": "2473192168887799892"
-      },
-      {
-        "file": "web-bundles/expansion-packs/bmad-2d-phaser-game-dev/agents/game-designer.txt",
-        "hash": "10959391451612624976"
-      },
-      {
-        "file": "docker-compose.yml",
-        "hash": "14387312799981617355"
-      },
-      {
-        "file": "web-bundles/expansion-packs/bmad-infrastructure-devops/agents/infra-devops-platform.txt",
-        "hash": "5580163810159106504"
-      },
-      {
-        "file": ".bmad-core/tasks/create-next-story.md",
-        "hash": "3051341942697177096"
-      },
-      {
-        "file": "web-bundles/agents/dev.txt",
-        "hash": "15718157074790500176"
-      },
-      {
-        "file": "nx.json",
-        "hash": "1786771560122721714"
+        "file": "apps/web/components/tickets/TicketList.tsx",
+        "hash": "11028855420367239209"
       },
       {
         "file": ".bmad-core/utils/workflow-management.md",
         "hash": "18194994020659020874"
       },
       {
+        "file": "apps/web/components/payment/PaymentCard.tsx",
+        "hash": "9198938074754959789"
+      },
+      {
+        "file": "apps/web/components/parks/ParkDetails.tsx",
+        "hash": "9324748115309953294"
+      },
+      {
+        "file": "apps/web/lib/types.ts",
+        "hash": "8045301359670721813"
+      },
+      {
+        "file": "apps/web/components/payment/PaymentHistory.tsx",
+        "hash": "13219952362867505053"
+      },
+      {
+        "file": ".bmad-core/templates/brownfield-prd-tmpl.md",
+        "hash": "8745902704784326996"
+      },
+      {
+        "file": "README.md",
+        "hash": "18045814481648493510"
+      },
+      {
+        "file": ".claude/commands/bmad-orchestrator.md",
+        "hash": "18065218067241450644"
+      },
+      {
+        "file": "apps/web/components/ui/Input.tsx",
+        "hash": "13098082530762537288"
+      },
+      {
+        "file": "apps/web/.eslintrc.json",
+        "hash": "18156345186018801170"
+      },
+      {
+        "file": "package.json",
+        "hash": "12850687126014438107"
+      },
+      {
+        "file": ".bmad-core/checklists/pm-checklist.md",
+        "hash": "1549985345972587606"
+      },
+      {
+        "file": "apps/web/types/booking.ts",
+        "hash": "3968920832726096913"
+      },
+      {
+        "file": "apps/web/components/auth/PhoneLoginForm.tsx",
+        "hash": "7968721607480679736"
+      },
+      {
+        "file": ".bmad-core/templates/prd-tmpl.md",
+        "hash": "4929211100164419294"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "6751747972276968641"
+      },
+      {
+        "file": "apps/web/app/(main)/settings/notifications/page.tsx",
+        "hash": "8708904367444295026"
+      },
+      {
+        "file": ".bmad-core/workflows/brownfield-fullstack.yml",
+        "hash": "6074379602921241416"
+      },
+      {
+        "file": ".bmad-core/tasks/brownfield-create-epic.md",
+        "hash": "17722509943214226637"
+      },
+      {
+        "file": ".bmad-core/agents/sm.md",
+        "hash": "16152549592803377261"
+      },
+      {
+        "file": ".bmad-core/agents/pm.md",
+        "hash": "14203174319011974127"
+      },
+      {
+        "file": "web-bundles/agents/analyst.txt",
+        "hash": "7088732117487932147"
+      },
+      {
+        "file": "apps/web/components/ui/LoadingSpinner.tsx",
+        "hash": "934046582910253337"
+      },
+      {
+        "file": ".bmad-core/tasks/document-project.md",
+        "hash": "17549898705685211669"
+      },
+      {
+        "file": ".claude/commands/architect.md",
+        "hash": "14305683530431809109"
+      },
+      {
+        "file": "packages/shared/src/types/ticket.ts",
+        "hash": "13968624209075348807"
+      },
+      {
+        "file": "apps/web/app/api/auth/verify/route.ts",
+        "hash": "8510041989541246558"
+      },
+      {
+        "file": ".bmad-core/templates/market-research-tmpl.md",
+        "hash": "17985261253331996673"
+      },
+      {
+        "file": "apps/web/components/admin/ParkManagement.tsx",
+        "hash": "3051142792303065566"
+      },
+      {
+        "file": ".bmad-core/workflows/brownfield-ui.yml",
+        "hash": "5658865642125966613"
+      },
+      {
+        "file": "apps/web/services/parkService.ts",
+        "hash": "8222149144712628223"
+      },
+      {
+        "file": "apps/api/internal/park/service.go",
+        "hash": "6148035872368837014"
+      },
+      {
+        "file": "docs/project-structure.md",
+        "hash": "9871577978578708735"
+      },
+      {
+        "file": "web-bundles/expansion-packs/bmad-infrastructure-devops/agents/infra-devops-platform.txt",
+        "hash": "5580163810159106504"
+      },
+      {
+        "file": "apps/web/lib/utils.ts",
+        "hash": "12738667862952920385"
+      },
+      {
+        "file": "apps/web/components/parks/ParkCard.tsx",
+        "hash": "9256726932125131057"
+      },
+      {
+        "file": "apps/api/pkg/config/database.go",
+        "hash": "5666273592625115703"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "14387312799981617355"
+      },
+      {
+        "file": ".cursor/rules/dev.mdc",
+        "hash": "9105972924494461623"
+      },
+      {
+        "file": "apps/web/hooks/useApiCall.ts",
+        "hash": "13544138265362905404"
+      },
+      {
+        "file": "packages/shared/package.json",
+        "hash": "499004621388324201"
+      },
+      {
+        "file": "apps/web/next.config.js",
+        "hash": "11643506752874212828"
+      },
+      {
+        "file": ".bmad-core/agent-teams/team-all.yml",
+        "hash": "4768717523727877546"
+      },
+      {
+        "file": "apps/web/components/layout/NotificationBell.tsx",
+        "hash": "13973933209033873196"
+      },
+      {
+        "file": "web-bundles/teams/team-all.txt",
+        "hash": "4101723335615191338"
+      },
+      {
+        "file": "apps/web/components/ui/tabs.tsx",
+        "hash": "7263398466955344927"
+      },
+      {
+        "file": "docs/bmad-next-steps.md",
+        "hash": "17832633718391646210"
+      },
+      {
+        "file": ".bmad-core/workflows/greenfield-fullstack.yml",
+        "hash": "6349633131219142863"
+      },
+      {
+        "file": ".claude/commands/sm.md",
+        "hash": "13091596424583452399"
+      },
+      {
+        "file": "apps/web/components/admin/UserManagement.tsx",
+        "hash": "17000628191529953317"
+      },
+      {
+        "file": "apps/api/internal/booking/handlers.go",
+        "hash": "16564639953958869802"
+      },
+      {
+        "file": "apps/web/app/admin/layout.tsx",
+        "hash": "15964378458171906871"
+      },
+      {
+        "file": "web-bundles/agents/dev.txt",
+        "hash": "15718157074790500176"
+      },
+      {
+        "file": "apps/web/app/(main)/parks/[id]/book/page.tsx",
+        "hash": "15484608111918104039"
+      },
+      {
+        "file": "apps/api/scripts/init-db.sh",
+        "hash": "10886807421808926400"
+      },
+      {
+        "file": "apps/web/components/tickets/TicketScanner.tsx",
+        "hash": "4078962916981576102"
+      },
+      {
+        "file": "apps/web/tsconfig.json",
+        "hash": "14134570398633982684"
+      },
+      {
+        "file": "apps/web/app/(main)/layout.tsx",
+        "hash": "1264110508513730395"
+      },
+      {
+        "file": "docs/prd.md",
+        "hash": "9422145526549897416"
+      },
+      {
+        "file": ".cursor/rules/analyst.mdc",
+        "hash": "2942818875756384736"
+      },
+      {
+        "file": "apps/web/services/ticketService.ts",
+        "hash": "17204769682319892522"
+      },
+      {
+        "file": "apps/web/Dockerfile",
+        "hash": "14330560996339133968"
+      },
+      {
+        "file": "web-bundles/teams/team-ide-minimal.txt",
+        "hash": "2125978878307828482"
+      },
+      {
+        "file": "apps/web/components/booking/BookingForm.tsx",
+        "hash": "1785927960135494593"
+      },
+      {
+        "file": "apps/web/app/globals.css",
+        "hash": "5755966625470065915"
+      },
+      {
+        "file": ".bmad-core/templates/front-end-spec-tmpl.md",
+        "hash": "6453823570525453142"
+      },
+      {
+        "file": ".bmad-core/workflows/brownfield-service.yml",
+        "hash": "17560756063545300354"
+      },
+      {
+        "file": ".bmad-core/agents/architect.md",
+        "hash": "15951196362593817899"
+      },
+      {
+        "file": "web-bundles/agents/sm.txt",
+        "hash": "17876668868295277844"
+      },
+      {
+        "file": "apps/web/components/auth/ProtectedRoute.tsx",
+        "hash": "8031721832531493272"
+      },
+      {
+        "file": ".bmad-core/workflows/greenfield-ui.yml",
+        "hash": "8823310211538846515"
+      },
+      {
+        "file": "apps/web/services/crmService.ts",
+        "hash": "10839770523983323409"
+      },
+      {
+        "file": ".claude/commands/qa.md",
+        "hash": "3004204032671680267"
+      },
+      {
+        "file": "DEMO.md",
+        "hash": "18164486227812464591"
+      },
+      {
+        "file": "apps/web/lib/mock.ts",
+        "hash": "973272693180869174"
+      },
+      {
+        "file": ".bmad-core/agents/analyst.md",
+        "hash": "1425827332768969576"
+      },
+      {
+        "file": "apps/web/app/(main)/dashboard/page.tsx",
+        "hash": "1512620466998250451"
+      },
+      {
+        "file": "packages/shared/tsconfig.tsbuildinfo",
+        "hash": "3783539860447431298"
+      },
+      {
+        "file": ".bmad-core/templates/project-brief-tmpl.md",
+        "hash": "9171619349569646110"
+      },
+      {
+        "file": "web-bundles/agents/architect.txt",
+        "hash": "14693132674100864715"
+      },
+      {
+        "file": "apps/web/app/(main)/scanner/page.tsx",
+        "hash": "5374054664704019590"
+      },
+      {
+        "file": "apps/web/components/crm/CRMDashboard.tsx",
+        "hash": "1937290999132355761"
+      },
+      {
+        "file": "docs/database-schema.md",
+        "hash": "14527305286163001245"
+      },
+      {
+        "file": "docs/development-workflow.md",
+        "hash": "6669710158342657484"
+      },
+      {
         "file": ".bmad-core/checklists/architect-checklist.md",
         "hash": "857651173762504260"
+      },
+      {
+        "file": "apps/web/public/favicon.ico",
+        "hash": "2560269421859972101"
+      },
+      {
+        "file": ".claude/commands/bmad-master.md",
+        "hash": "18104141132065013979"
+      },
+      {
+        "file": "apps/web/app/admin/page.tsx",
+        "hash": "2805905717327555112"
+      },
+      {
+        "file": "database-setup.sql",
+        "hash": "6174747960264044161"
+      },
+      {
+        "file": "apps/web/components/notifications/NotificationSettings.tsx",
+        "hash": "13196730782803959743"
+      },
+      {
+        "file": "apps/web/types/park.ts",
+        "hash": "10115029271138599066"
+      },
+      {
+        "file": ".cursor/rules/pm.mdc",
+        "hash": "1095960752211147861"
+      },
+      {
+        "file": "web-bundles/agents/bmad-master.txt",
+        "hash": "8442094616271926518"
+      },
+      {
+        "file": "docs/api-specification.md",
+        "hash": "12098953518052364120"
+      },
+      {
+        "file": "apps/web/app/page.tsx",
+        "hash": "858375903742815086"
+      },
+      {
+        "file": "web-bundles/expansion-packs/bmad-2d-phaser-game-dev/agents/game-designer.txt",
+        "hash": "10959391451612624976"
+      },
+      {
+        "file": ".bmad-core/tasks/create-doc.md",
+        "hash": "1413685922061672841"
+      },
+      {
+        "file": ".bmad-core/workflows/greenfield-service.yml",
+        "hash": "6824859767591164817"
+      },
+      {
+        "file": "apps/web/components/ui/Button.tsx",
+        "hash": "464426315243317813"
+      },
+      {
+        "file": "README_DEMO.md",
+        "hash": "4561068379617044902"
+      },
+      {
+        "file": "apps/web/components/parks/RecommendedParks.tsx",
+        "hash": "10556130484146703296"
+      },
+      {
+        "file": "web-bundles/expansion-packs/bmad-2d-phaser-game-dev/agents/game-sm.txt",
+        "hash": "1553982106441080686"
+      },
+      {
+        "file": ".claude/commands/pm.md",
+        "hash": "9820780533415619713"
+      },
+      {
+        "file": ".bmad-core/templates/story-tmpl.md",
+        "hash": "9028945527282560320"
+      },
+      {
+        "file": "scripts/dev-start.ps1",
+        "hash": "17292717371436769595"
+      },
+      {
+        "file": "apps/web/app/api/auth/admin-verify/route.ts",
+        "hash": "4077326399401147700"
+      },
+      {
+        "file": "apps/web/hooks/useDebounce.ts",
+        "hash": "7418977907128029009"
+      },
+      {
+        "file": "apps/web/tailwind.config.js",
+        "hash": "14101510937618815737"
+      },
+      {
+        "file": ".claude/commands/dev.md",
+        "hash": "8597677056969759049"
+      },
+      {
+        "file": ".bmad-core/templates/competitor-analysis-tmpl.md",
+        "hash": "5551742410949255668"
+      },
+      {
+        "file": "apps/web/app/unauthorized/page.tsx",
+        "hash": "12634912203163509199"
+      },
+      {
+        "file": "docs/index.md",
+        "hash": "18178235304952660947"
+      },
+      {
+        "file": "apps/web/components/ui/Label.tsx",
+        "hash": "1589990455062969067"
+      },
+      {
+        "file": ".bmad-core/agents/po.md",
+        "hash": "4392624591199992000"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "8601486876628202201"
+      },
+      {
+        "file": "apps/web/components/layout/PageWrapper.tsx",
+        "hash": "6261093096589528105"
+      },
+      {
+        "file": ".bmad-core/templates/brownfield-architecture-tmpl.md",
+        "hash": "2473192168887799892"
+      },
+      {
+        "file": "apps/web/postcss.config.js",
+        "hash": "12914707118528919400"
+      },
+      {
+        "file": "apps/web/components/layout/Navigation.tsx",
+        "hash": "4424239174196726578"
+      },
+      {
+        "file": "apps/web/hooks/useAsyncData.ts",
+        "hash": "10334418658756899059"
+      },
+      {
+        "file": "apps/web/app/api/auth/send-sms/route.ts",
+        "hash": "9788434433212666329"
+      },
+      {
+        "file": "scripts/dev-setup.ps1",
+        "hash": "10557952359193065852"
+      },
+      {
+        "file": "scripts/dev-stop.ps1",
+        "hash": "9133653482837968180"
+      },
+      {
+        "file": "web-bundles/agents/qa.txt",
+        "hash": "8177151646310436205"
+      },
+      {
+        "file": "apps/web/components/payment/PaymentSuccess.tsx",
+        "hash": "9444400918900074580"
+      },
+      {
+        "file": "web-bundles/agents/ux-expert.txt",
+        "hash": "14332714336218960116"
+      },
+      {
+        "file": ".bmad-core/checklists/story-draft-checklist.md",
+        "hash": "12121086325866389674"
+      },
+      {
+        "file": "apps/web/app/layout.tsx",
+        "hash": "688993358636080712"
+      },
+      {
+        "file": ".cursor/mcp.json",
+        "hash": "10534719945417681160"
+      },
+      {
+        "file": "apps/web/public/favicon.svg",
+        "hash": "2560269421859972101"
+      },
+      {
+        "file": "packages/shared/src/types/payment.ts",
+        "hash": "1037327941484163357"
+      },
+      {
+        "file": "apps/web/services/notificationService.ts",
+        "hash": "9307686796343326069"
+      },
+      {
+        "file": "scripts/dev-build.ps1",
+        "hash": "1192954018092834063"
+      },
+      {
+        "file": "packages/shared/tsconfig.json",
+        "hash": "6913656298940791426"
+      },
+      {
+        "file": "apps/web/package.json",
+        "hash": "9632507913674813182"
+      },
+      {
+        "file": "apps/web/app/(main)/parks/[id]/book/payment/page.tsx",
+        "hash": "2020473457606372778"
+      },
+      {
+        "file": ".bmad-core/utils/template-format.md",
+        "hash": "3153827118336956642"
+      },
+      {
+        "file": "apps/api/internal/park/handlers.go",
+        "hash": "7556954767855741349"
+      },
+      {
+        "file": ".bmad-core/agents/bmad-master.md",
+        "hash": "11782881777146521966"
+      },
+      {
+        "file": "apps/web/types/user.ts",
+        "hash": "5187493012935684176"
+      },
+      {
+        "file": "apps/api/internal/auth/jwt.go",
+        "hash": "10326920879959092782"
+      },
+      {
+        "file": "apps/web/app/auth/admin/page.tsx",
+        "hash": "15576747613768694308"
+      },
+      {
+        "file": "apps/web/components/admin/NotificationManagement.tsx",
+        "hash": "11506334919137651166"
+      },
+      {
+        "file": "apps/api/internal/booking/service.go",
+        "hash": "12683928579976243940"
+      },
+      {
+        "file": ".cursor/rules/architect.mdc",
+        "hash": "3894699219936143635"
+      },
+      {
+        "file": "apps/api/go.mod",
+        "hash": "569669181801388519"
+      },
+      {
+        "file": "apps/web/components/ui/Card.tsx",
+        "hash": "6347785848290841853"
+      },
+      {
+        "file": ".bmad-core/agents/dev.md",
+        "hash": "9988487909325581301"
+      },
+      {
+        "file": "apps/web/types/payment.ts",
+        "hash": "1037327941484163357"
+      },
+      {
+        "file": "apps/api/migrations/001_initial_schema.up.sql",
+        "hash": "11344702199468301649"
+      },
+      {
+        "file": "web-bundles/expansion-packs/bmad-2d-phaser-game-dev/teams/phaser-2d-nodejs-game-team.txt",
+        "hash": "16158295768184336287"
+      },
+      {
+        "file": "apps/api/internal/auth/handlers.go",
+        "hash": "11903224960247259220"
+      },
+      {
+        "file": "apps/api/migrations/001_initial_schema.down.sql",
+        "hash": "848244914752494896"
+      },
+      {
+        "file": "apps/web/types/ticket.ts",
+        "hash": "13968624209075348807"
+      },
+      {
+        "file": ".bmad-core/tasks/generate-ai-frontend-prompt.md",
+        "hash": "5735414669610868932"
+      },
+      {
+        "file": ".bmad-core/agent-teams/team-fullstack.yml",
+        "hash": "2438951786148767265"
+      },
+      {
+        "file": ".bmad-core/install-manifest.yml",
+        "hash": "2233043960343395476"
+      },
+      {
+        "file": ".bmad-core/agent-teams/team-ide-minimal.yml",
+        "hash": "4063856261287734032"
+      },
+      {
+        "file": ".cursor/rules/bmad-orchestrator.mdc",
+        "hash": "4441932719062889079"
+      },
+      {
+        "file": "apps/api/internal/auth/middleware.go",
+        "hash": "9801984809320801036"
+      },
+      {
+        "file": "apps/web/types/api.ts",
+        "hash": "7962217100179960293"
+      },
+      {
+        "file": ".bmad-core/tasks/create-next-story.md",
+        "hash": "3051341942697177096"
+      },
+      {
+        "file": ".claude/commands/ux-expert.md",
+        "hash": "12820140148491691260"
+      },
+      {
+        "file": ".bmad-core/tasks/index-docs.md",
+        "hash": "4662986920490171441"
+      },
+      {
+        "file": ".bmad-core/tasks/advanced-elicitation.md",
+        "hash": "7105862244048556863"
+      },
+      {
+        "file": ".bmad-core/tasks/review-story.md",
+        "hash": "13606440757751446981"
+      },
+      {
+        "file": ".cursor/rules/po.mdc",
+        "hash": "17524546753730641149"
+      },
+      {
+        "file": "web-bundles/agents/pm.txt",
+        "hash": "12665020016533315735"
+      },
+      {
+        "file": "web-bundles/expansion-packs/bmad-creator-tools/agents/bmad-the-creator.txt",
+        "hash": "4720744076296421015"
+      },
+      {
+        "file": ".bmad-core/tasks/brainstorming-techniques.md",
+        "hash": "2179944316025252331"
+      },
+      {
+        "file": "apps/web/components/admin/StatsCards.tsx",
+        "hash": "17807581196473519787"
+      },
+      {
+        "file": "apps/web/app/admin/crm/page.tsx",
+        "hash": "11919863795193352019"
+      },
+      {
+        "file": "packages/shared/src/types/index.ts",
+        "hash": "5955016066281348150"
+      },
+      {
+        "file": "apps/web/package-lock.json",
+        "hash": "8786135030963184852"
+      },
+      {
+        "file": "apps/api/internal/models/types.go",
+        "hash": "11640580680609871304"
+      },
+      {
+        "file": "packages/shared/src/types/booking.ts",
+        "hash": "3968920832726096913"
+      },
+      {
+        "file": ".bmad-core/tasks/execute-checklist.md",
+        "hash": "3022133633770493768"
+      },
+      {
+        "file": ".bmad-core/data/bmad-kb.md",
+        "hash": "522945822649510433"
+      },
+      {
+        "file": "apps/api/cmd/api/main.go",
+        "hash": "9804654244452961432"
+      },
+      {
+        "file": ".bmad-core/templates/fullstack-architecture-tmpl.md",
+        "hash": "10837306497705793325"
+      },
+      {
+        "file": "apps/web/components/admin/AdminAuthGuard.tsx",
+        "hash": "9505243189559295873"
+      },
+      {
+        "file": ".bmad-core/tasks/kb-mode-interaction.md",
+        "hash": "14069625296624146716"
+      },
+      {
+        "file": ".bmad-core/core-config.yml",
+        "hash": "5335194460376822961"
+      },
+      {
+        "file": "env.example",
+        "hash": "14003207406979056245"
       },
       {
         "file": ".bmad-core/tasks/doc-migration-task.md",
         "hash": "5099051183502106172"
       },
       {
-        "file": ".bmad-core/templates/project-brief-tmpl.md",
-        "hash": "9171619349569646110"
+        "file": "apps/web/types/index.ts",
+        "hash": "5955016066281348150"
+      },
+      {
+        "file": "apps/web/components/ui/index.ts",
+        "hash": "13793720439151342479"
+      },
+      {
+        "file": "apps/web/components/notifications/NotificationCenter.tsx",
+        "hash": "10259153379267995584"
+      },
+      {
+        "file": "packages/shared/src/types/user.ts",
+        "hash": "5187493012935684176"
+      },
+      {
+        "file": "web-bundles/expansion-packs/bmad-2d-phaser-game-dev/agents/game-developer.txt",
+        "hash": "9037879605527566015"
+      },
+      {
+        "file": "apps/web/app/(main)/notifications/page.tsx",
+        "hash": "9951876748688366627"
+      },
+      {
+        "file": "docs/frontend-specification.md",
+        "hash": "16508819214059760153"
+      },
+      {
+        "file": "apps/web/components/ui/EmptyState.tsx",
+        "hash": "2881805551931007597"
+      },
+      {
+        "file": "apps/web/stores/useAuthStore.ts",
+        "hash": "5645112076858451608"
+      },
+      {
+        "file": "apps/web/components/admin/AdminDashboard.tsx",
+        "hash": "14857571633660576892"
+      },
+      {
+        "file": ".bmad-core/agents/qa.md",
+        "hash": "14876956160490156267"
+      },
+      {
+        "file": "apps/web/next-env.d.ts",
+        "hash": "10054213917412045845"
+      },
+      {
+        "file": ".bmad-core/data/technical-preferences.md",
+        "hash": "4399453671753393601"
+      },
+      {
+        "file": "web-bundles/agents/po.txt",
+        "hash": "387632586812184100"
+      },
+      {
+        "file": "netlify.toml",
+        "hash": "13611943664549655864"
+      },
+      {
+        "file": "apps/web/hooks/useLocalStorage.ts",
+        "hash": "4751601270316294012"
+      },
+      {
+        "file": "apps/web/app/(main)/parks/page.tsx",
+        "hash": "13289005167624340203"
+      },
+      {
+        "file": ".bmad-core/tasks/brownfield-create-story.md",
+        "hash": "1023390254117299547"
+      },
+      {
+        "file": "apps/web/components/payment/PaymentFlow.tsx",
+        "hash": "9601856916527872879"
+      },
+      {
+        "file": ".cursor/rules/ux-expert.mdc",
+        "hash": "16622853762879108151"
+      },
+      {
+        "file": ".bmad-core/checklists/po-master-checklist.md",
+        "hash": "10476211924413140908"
+      },
+      {
+        "file": "apps/web/services/paymentService.ts",
+        "hash": "6466319894309925741"
+      },
+      {
+        "file": ".bmad-core/templates/front-end-architecture-tmpl.md",
+        "hash": "15695692578148247921"
+      },
+      {
+        "file": "apps/web/public/sw.js",
+        "hash": "7811775673472282962"
+      },
+      {
+        "file": "apps/web/components/booking/BookingCard.tsx",
+        "hash": "2470808523574445318"
+      },
+      {
+        "file": ".bmad-core/tasks/correct-course.md",
+        "hash": "445739732324681032"
+      },
+      {
+        "file": ".bmad-core/agent-teams/team-no-ui.yml",
+        "hash": "8573075555491031755"
+      },
+      {
+        "file": ".bmad-core/tasks/shard-doc.md",
+        "hash": "6073842699219087038"
+      },
+      {
+        "file": "apps/web/lib/mockData.ts",
+        "hash": "9628568048124780736"
+      },
+      {
+        "file": ".bmad-core/checklists/story-dod-checklist.md",
+        "hash": "14028943046937382362"
+      },
+      {
+        "file": "web-bundles/agents/bmad-orchestrator.txt",
+        "hash": "2353485623502670786"
+      },
+      {
+        "file": ".claude/commands/po.md",
+        "hash": "10136073140387859954"
+      },
+      {
+        "file": "apps/web/components/admin/RevenueChart.tsx",
+        "hash": "925605881848435320"
+      },
+      {
+        "file": "apps/web/app/(main)/tickets/page.tsx",
+        "hash": "11009032361296610415"
+      },
+      {
+        "file": "apps/web/components/tickets/QRCodeGenerator.tsx",
+        "hash": "16979052100679575414"
+      },
+      {
+        "file": ".bmad-core/agents/bmad-orchestrator.md",
+        "hash": "12487902888762192104"
+      },
+      {
+        "file": "apps/web/hooks/index.ts",
+        "hash": "6839286336751751030"
+      },
+      {
+        "file": "apps/web/app/(main)/parks/[id]/page.tsx",
+        "hash": "15674502351742383127"
+      },
+      {
+        "file": "apps/api/internal/auth/sms.go",
+        "hash": "12000436726940769425"
+      },
+      {
+        "file": "apps/web/public/manifest.json",
+        "hash": "7213822866289124814"
+      },
+      {
+        "file": "apps/web/components/ui/ErrorBoundary.tsx",
+        "hash": "4973293845721787594"
+      },
+      {
+        "file": "apps/web/components/admin/BookingManagement.tsx",
+        "hash": "16733002371340874938"
+      },
+      {
+        "file": ".bmad-core/templates/architecture-tmpl.md",
+        "hash": "13159817830099568987"
+      },
+      {
+        "file": "apps/web/app/auth/login/page.tsx",
+        "hash": "7673860140837381177"
+      },
+      {
+        "file": ".claude/commands/analyst.md",
+        "hash": "8708494506145655465"
+      },
+      {
+        "file": ".bmad-core/agents/ux-expert.md",
+        "hash": "13167522112228361854"
+      },
+      {
+        "file": ".bmad-core/checklists/change-checklist.md",
+        "hash": "3103304462636179812"
+      },
+      {
+        "file": "apps/web/components/tickets/TicketCard.tsx",
+        "hash": "3089710225967324258"
+      },
+      {
+        "file": "docs/infrastructure-setup.md",
+        "hash": "4068303055118212945"
+      },
+      {
+        "file": "apps/web/tsconfig.tsbuildinfo",
+        "hash": "15797041294878982248"
+      },
+      {
+        "file": "apps/web/lib/logger.ts",
+        "hash": "18132430074129311987"
+      },
+      {
+        "file": ".cursor/rules/sm.mdc",
+        "hash": "12340706898763452469"
+      },
+      {
+        "file": "apps/web/components/parks/ParkList.tsx",
+        "hash": "11312987712861064453"
+      },
+      {
+        "file": "docs/backend-architecture.md",
+        "hash": "6256656873176681507"
+      },
+      {
+        "file": "web-bundles/teams/team-fullstack.txt",
+        "hash": "9541727308458490338"
       }
     ],
-    "projectFileMap": {
-      "@skypark/shared": [
-        {
-          "file": "packages/shared/package.json",
-          "hash": "499004621388324201",
-          "deps": [
-            "npm:zod",
-            "npm:date-fns",
-            "npm:@types/node",
-            "npm:typescript",
-            "npm:eslint",
-            "npm:@typescript-eslint/eslint-plugin",
-            "npm:@typescript-eslint/parser"
-          ]
-        },
-        {
-          "file": "packages/shared/src/index.ts",
-          "hash": "9605577563759515713"
-        },
-        {
-          "file": "packages/shared/src/types/api.ts",
-          "hash": "7962217100179960293",
-          "deps": [
-            "npm:zod"
-          ]
-        },
-        {
-          "file": "packages/shared/src/types/booking.ts",
-          "hash": "3968920832726096913",
-          "deps": [
-            "npm:zod"
-          ]
-        },
-        {
-          "file": "packages/shared/src/types/index.ts",
-          "hash": "5955016066281348150"
-        },
-        {
-          "file": "packages/shared/src/types/park.ts",
-          "hash": "10115029271138599066",
-          "deps": [
-            "npm:zod"
-          ]
-        },
-        {
-          "file": "packages/shared/src/types/payment.ts",
-          "hash": "1037327941484163357",
-          "deps": [
-            "npm:zod"
-          ]
-        },
-        {
-          "file": "packages/shared/src/types/ticket.ts",
-          "hash": "13968624209075348807",
-          "deps": [
-            "npm:zod"
-          ]
-        },
-        {
-          "file": "packages/shared/src/types/user.ts",
-          "hash": "5187493012935684176",
-          "deps": [
-            "npm:zod"
-          ]
-        },
-        {
-          "file": "packages/shared/tsconfig.json",
-          "hash": "6913656298940791426"
-        },
-        {
-          "file": "packages/shared/tsconfig.tsbuildinfo",
-          "hash": "3783539860447431298"
-        }
-      ],
-      "web": [
-        {
-          "file": "apps/web/.eslintrc.json",
-          "hash": "18156345186018801170"
-        },
-        {
-          "file": "apps/web/Dockerfile",
-          "hash": "14330560996339133968"
-        },
-        {
-          "file": "apps/web/app/(main)/dashboard/page.tsx",
-          "hash": "1512620466998250451",
-          "deps": [
-            "npm:react",
-            "npm:@/hooks",
-            "npm:@/lib/logger",
-            "npm:@/components/ui/Card",
-            "npm:@/components/ui/tabs",
-            "npm:lucide-react",
-            "npm:@/components/booking/BookingCard",
-            "npm:@/components/tickets/TicketCard",
-            "npm:@/components/payment/PaymentHistory",
-            "npm:@/components/layout/PageWrapper",
-            "npm:@/stores/useAuthStore",
-            "npm:@/services/bookingService",
-            "npm:@/services/ticketService",
-            "npm:@/services/notificationService",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/app/(main)/layout.tsx",
-          "hash": "1264110508513730395",
-          "deps": [
-            "npm:@/components/auth/ProtectedRoute"
-          ]
-        },
-        {
-          "file": "apps/web/app/(main)/notifications/page.tsx",
-          "hash": "9951876748688366627",
-          "deps": [
-            "npm:react",
-            "npm:@/components/notifications/NotificationCenter",
-            "npm:@/components/layout/PageWrapper",
-            "npm:lucide-react",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/app/(main)/parks/[id]/book/page.tsx",
-          "hash": "17346673904393175229",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:@skypark/shared/types",
-            "npm:@/services/parkService",
-            "npm:@/components/booking/BookingForm",
-            "npm:lucide-react",
-            "npm:@/components/ui/Button"
-          ]
-        },
-        {
-          "file": "apps/web/app/(main)/parks/[id]/book/payment/page.tsx",
-          "hash": "2020473457606372778",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:@/components/payment/PaymentFlow"
-          ]
-        },
-        {
-          "file": "apps/web/app/(main)/parks/[id]/page.tsx",
-          "hash": "3803724499497352158",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:@skypark/shared/types",
-            "npm:@/services/parkService",
-            "npm:@/components/parks/ParkDetails"
-          ]
-        },
-        {
-          "file": "apps/web/app/(main)/parks/page.tsx",
-          "hash": "493285048234332029",
-          "deps": [
-            "npm:react",
-            "npm:@/components/parks/ParkList",
-            "npm:@/components/parks/RecommendedParks",
-            "npm:@/components/layout/PageWrapper",
-            "npm:@/services/parkService",
-            "npm:@skypark/shared/types",
-            "npm:lucide-react",
-            "npm:@/hooks"
-          ]
-        },
-        {
-          "file": "apps/web/app/(main)/scanner/page.tsx",
-          "hash": "5374054664704019590",
-          "deps": [
-            "npm:react",
-            "npm:@/lib/logger",
-            "npm:@/components/layout/PageWrapper",
-            "npm:@/components/tickets/TicketScanner",
-            "npm:@/stores/useAuthStore",
-            "npm:lucide-react",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/app/(main)/settings/notifications/page.tsx",
-          "hash": "8708904367444295026",
-          "deps": [
-            "npm:react",
-            "npm:lucide-react",
-            "npm:@/services/notificationService",
-            "npm:@/components/layout/PageWrapper",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/app/(main)/tickets/page.tsx",
-          "hash": "9067725271568387751",
-          "deps": [
-            "npm:react",
-            "npm:@/hooks",
-            "npm:@/lib/logger",
-            "npm:@/components/tickets/TicketList",
-            "npm:@/services/ticketService",
-            "npm:@/stores/useAuthStore",
-            "npm:@skypark/shared/types",
-            "npm:@/components/ui/tabs",
-            "npm:@/components/layout/PageWrapper",
-            "npm:lucide-react",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/app/admin/crm/page.tsx",
-          "hash": "11919863795193352019",
-          "deps": [
-            "npm:react",
-            "npm:@/components/admin/AdminAuthGuard",
-            "npm:@/components/crm/CRMDashboard"
-          ]
-        },
-        {
-          "file": "apps/web/app/admin/layout.tsx",
-          "hash": "15964378458171906871",
-          "deps": [
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/app/admin/page.tsx",
-          "hash": "2805905717327555112",
-          "deps": [
-            "npm:next",
-            "npm:@/components/admin/AdminDashboard"
-          ]
-        },
-        {
-          "file": "apps/web/app/api/auth/admin-verify/route.ts",
-          "hash": "4077326399401147700",
-          "deps": [
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/app/api/auth/send-sms/route.ts",
-          "hash": "9788434433212666329",
-          "deps": [
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/app/api/auth/verify/route.ts",
-          "hash": "8510041989541246558",
-          "deps": [
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/app/auth/admin/page.tsx",
-          "hash": "15576747613768694308",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:lucide-react",
-            "npm:@/components/ui/Button",
-            "npm:@/components/ui/Card",
-            "npm:@/components/ui/Input",
-            "npm:@/components/ui/Label",
-            "npm:@/stores/useAuthStore"
-          ]
-        },
-        {
-          "file": "apps/web/app/auth/login/page.tsx",
-          "hash": "7673860140837381177",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:lucide-react",
-            "npm:@/components/ui/Button",
-            "npm:@/components/ui/Card",
-            "npm:@/components/ui/Input",
-            "npm:@/components/ui/Label",
-            "npm:@/stores/useAuthStore"
-          ]
-        },
-        {
-          "file": "apps/web/app/globals.css",
-          "hash": "5755966625470065915"
-        },
-        {
-          "file": "apps/web/app/layout.tsx",
-          "hash": "688993358636080712",
-          "deps": [
-            "npm:next",
-            "npm:@/components/ui"
-          ]
-        },
-        {
-          "file": "apps/web/app/page.tsx",
-          "hash": "858375903742815086",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:@/stores/useAuthStore",
-            "npm:@/components/ui/Button",
-            "npm:lucide-react"
-          ]
-        },
-        {
-          "file": "apps/web/app/unauthorized/page.tsx",
-          "hash": "12634912203163509199",
-          "deps": [
-            "npm:next",
-            "npm:lucide-react",
-            "npm:@/components/ui/Button",
-            "npm:@/stores/useAuthStore"
-          ]
-        },
-        {
-          "file": "apps/web/components/admin/AdminAuthGuard.tsx",
-          "hash": "9505243189559295873",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:lucide-react",
-            "npm:@/stores/useAuthStore"
-          ]
-        },
-        {
-          "file": "apps/web/components/admin/AdminDashboard.tsx",
-          "hash": "14857571633660576892",
-          "deps": [
-            "npm:react",
-            "npm:lucide-react",
-            "npm:@/components/ui/Button",
-            "npm:@/components/ui/Card",
-            "npm:@/components/ui/tabs",
-            "npm:@/services/adminService"
-          ]
-        },
-        {
-          "file": "apps/web/components/admin/BookingManagement.tsx",
-          "hash": "16733002371340874938",
-          "deps": [
-            "npm:react",
-            "npm:lucide-react",
-            "npm:@/components/ui/Card",
-            "npm:@/components/ui/Button",
-            "npm:@/components/ui/Input",
-            "npm:@/services/adminService"
-          ]
-        },
-        {
-          "file": "apps/web/components/admin/NotificationManagement.tsx",
-          "hash": "11506334919137651166",
-          "deps": [
-            "npm:react",
-            "npm:@/components/ui/Card",
-            "npm:@/components/ui/Button",
-            "npm:lucide-react"
-          ]
-        },
-        {
-          "file": "apps/web/components/admin/ParkManagement.tsx",
-          "hash": "3051142792303065566",
-          "deps": [
-            "npm:react",
-            "npm:lucide-react",
-            "npm:@/components/ui/Card",
-            "npm:@/components/ui/Button",
-            "npm:@/services/adminService"
-          ]
-        },
-        {
-          "file": "apps/web/components/admin/RevenueChart.tsx",
-          "hash": "925605881848435320",
-          "deps": [
-            "npm:react",
-            "npm:@/components/ui/Card",
-            "npm:lucide-react"
-          ]
-        },
-        {
-          "file": "apps/web/components/admin/StatsCards.tsx",
-          "hash": "17807581196473519787",
-          "deps": [
-            "npm:react",
-            "npm:@/components/ui/Card",
-            "npm:lucide-react",
-            "npm:@/services/adminService"
-          ]
-        },
-        {
-          "file": "apps/web/components/admin/UserManagement.tsx",
-          "hash": "17000628191529953317",
-          "deps": [
-            "npm:react",
-            "npm:lucide-react",
-            "npm:@/components/ui/Card",
-            "npm:@/components/ui/Button",
-            "npm:@/components/ui/Input",
-            "npm:@/services/adminService"
-          ]
-        },
-        {
-          "file": "apps/web/components/auth/PhoneLoginForm.tsx",
-          "hash": "7968721607480679736",
-          "deps": [
-            "npm:react",
-            "npm:@/stores/useAuthStore",
-            "npm:@/components/ui/Button",
-            "npm:@/components/ui/Input",
-            "npm:@/components/ui/Card",
-            "npm:@/components/ui/Label",
-            "npm:lucide-react"
-          ]
-        },
-        {
-          "file": "apps/web/components/auth/ProtectedRoute.tsx",
-          "hash": "8031721832531493272",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:@/stores/useAuthStore",
-            "npm:lucide-react"
-          ]
-        },
-        {
-          "file": "apps/web/components/booking/BookingCard.tsx",
-          "hash": "2470808523574445318",
-          "deps": [
-            "npm:react",
-            "npm:lucide-react",
-            "npm:@/components/ui/Button",
-            "npm:@/components/ui/Card",
-            "npm:@/services/bookingService"
-          ]
-        },
-        {
-          "file": "apps/web/components/booking/BookingForm.tsx",
-          "hash": "1785927960135494593",
-          "deps": [
-            "npm:react",
-            "npm:lucide-react",
-            "npm:@/components/ui/Button",
-            "npm:@/components/ui/Card",
-            "npm:@/components/ui/Input",
-            "npm:@/components/ui/Label",
-            "npm:@/services/bookingService",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/components/crm/CRMDashboard.tsx",
-          "hash": "1937290999132355761",
-          "deps": [
-            "npm:react",
-            "npm:@/components/ui/Card",
-            "npm:lucide-react"
-          ]
-        },
-        {
-          "file": "apps/web/components/layout/Navigation.tsx",
-          "hash": "4424239174196726578",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:lucide-react",
-            "npm:@/stores/useAuthStore"
-          ]
-        },
-        {
-          "file": "apps/web/components/layout/NotificationBell.tsx",
-          "hash": "13973933209033873196",
-          "deps": [
-            "npm:react",
-            "npm:lucide-react",
-            "npm:@/components/ui/Button"
-          ]
-        },
-        {
-          "file": "apps/web/components/layout/PageWrapper.tsx",
-          "hash": "6261093096589528105",
-          "deps": [
-            "npm:react",
-            "npm:lucide-react",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/components/notifications/NotificationCenter.tsx",
-          "hash": "10259153379267995584",
-          "deps": [
-            "npm:react",
-            "npm:@/components/ui/Card",
-            "npm:lucide-react"
-          ]
-        },
-        {
-          "file": "apps/web/components/notifications/NotificationSettings.tsx",
-          "hash": "13196730782803959743",
-          "deps": [
-            "npm:react",
-            "npm:lucide-react",
-            "npm:@/components/ui/Card",
-            "npm:@/components/ui/Button",
-            "npm:@/services/notificationService"
-          ]
-        },
-        {
-          "file": "apps/web/components/parks/ParkCard.tsx",
-          "hash": "4755983482954925010",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:@skypark/shared/types"
-          ]
-        },
-        {
-          "file": "apps/web/components/parks/ParkDetails.tsx",
-          "hash": "89329709252463038",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:@skypark/shared/types"
-          ]
-        },
-        {
-          "file": "apps/web/components/parks/ParkList.tsx",
-          "hash": "12828648950059860326",
-          "deps": [
-            "npm:react",
-            "npm:@skypark/shared/types",
-            "npm:@/hooks",
-            "npm:@/lib/logger"
-          ]
-        },
-        {
-          "file": "apps/web/components/parks/RecommendedParks.tsx",
-          "hash": "17506191573619131114",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:@skypark/shared/types"
-          ]
-        },
-        {
-          "file": "apps/web/components/payment/PaymentCard.tsx",
-          "hash": "9198938074754959789",
-          "deps": [
-            "npm:react",
-            "npm:lucide-react",
-            "npm:@/components/ui/Button",
-            "npm:@/components/ui/Card",
-            "npm:@/services/paymentService",
-            "npm:@/services/bookingService"
-          ]
-        },
-        {
-          "file": "apps/web/components/payment/PaymentFlow.tsx",
-          "hash": "9601856916527872879",
-          "deps": [
-            "npm:react",
-            "npm:lucide-react",
-            "npm:next",
-            "npm:@/components/ui/Button",
-            "npm:@/services/bookingService",
-            "npm:@/services/paymentService"
-          ]
-        },
-        {
-          "file": "apps/web/components/payment/PaymentForm.tsx",
-          "hash": "17778165152971300938",
-          "deps": [
-            "npm:react",
-            "npm:lucide-react",
-            "npm:@/components/ui/Button",
-            "npm:@/components/ui/Card",
-            "npm:@/components/ui/Input",
-            "npm:@/components/ui/Label",
-            "npm:@/services/paymentService",
-            "npm:@/services/bookingService"
-          ]
-        },
-        {
-          "file": "apps/web/components/payment/PaymentHistory.tsx",
-          "hash": "13219952362867505053",
-          "deps": [
-            "npm:react",
-            "npm:lucide-react",
-            "npm:@/components/ui/Button",
-            "npm:@/components/ui/Card",
-            "npm:@/components/ui/Input",
-            "npm:@/services/paymentService",
-            "npm:@/services/bookingService"
-          ]
-        },
-        {
-          "file": "apps/web/components/payment/PaymentSuccess.tsx",
-          "hash": "9444400918900074580",
-          "deps": [
-            "npm:react",
-            "npm:lucide-react",
-            "npm:@/components/ui/Button",
-            "npm:@/components/ui/Card",
-            "npm:next",
-            "npm:@/services/paymentService",
-            "npm:@/services/bookingService",
-            "npm:@/services/ticketService"
-          ]
-        },
-        {
-          "file": "apps/web/components/tickets/QRCodeGenerator.tsx",
-          "hash": "16979052100679575414",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/web/components/tickets/TicketCard.tsx",
-          "hash": "3089710225967324258",
-          "deps": [
-            "npm:react",
-            "npm:lucide-react",
-            "npm:@/components/ui/Button",
-            "npm:@/components/ui/Card",
-            "npm:@/services/ticketService"
-          ]
-        },
-        {
-          "file": "apps/web/components/tickets/TicketList.tsx",
-          "hash": "11028855420367239209",
-          "deps": [
-            "npm:react",
-            "npm:lucide-react",
-            "npm:@/components/ui/Button",
-            "npm:@/components/ui/Card",
-            "npm:@/components/ui/Input",
-            "npm:@/components/ui/LoadingSpinner",
-            "npm:@/components/ui/EmptyState",
-            "npm:@/hooks",
-            "npm:@/services/ticketService",
-            "npm:@/lib/types",
-            "npm:@/lib/logger"
-          ]
-        },
-        {
-          "file": "apps/web/components/tickets/TicketScanner.tsx",
-          "hash": "4078962916981576102",
-          "deps": [
-            "npm:react",
-            "npm:lucide-react",
-            "npm:@/components/ui/Button",
-            "npm:@/components/ui/Card",
-            "npm:@/components/ui/Input",
-            "npm:@/services/ticketService"
-          ]
-        },
-        {
-          "file": "apps/web/components/ui/Button.tsx",
-          "hash": "464426315243317813",
-          "deps": [
-            "npm:react",
-            "npm:@radix-ui/react-slot",
-            "npm:class-variance-authority",
-            "npm:@/lib/utils"
-          ]
-        },
-        {
-          "file": "apps/web/components/ui/Card.tsx",
-          "hash": "6347785848290841853",
-          "deps": [
-            "npm:react",
-            "npm:@/lib/utils"
-          ]
-        },
-        {
-          "file": "apps/web/components/ui/EmptyState.tsx",
-          "hash": "2881805551931007597",
-          "deps": [
-            "npm:react",
-            "npm:lucide-react",
-            "npm:@/lib/types"
-          ]
-        },
-        {
-          "file": "apps/web/components/ui/ErrorBoundary.tsx",
-          "hash": "4973293845721787594",
-          "deps": [
-            "npm:react",
-            "npm:lucide-react",
-            "npm:@/lib/logger"
-          ]
-        },
-        {
-          "file": "apps/web/components/ui/Input.tsx",
-          "hash": "13098082530762537288",
-          "deps": [
-            "npm:react",
-            "npm:@/lib/utils"
-          ]
-        },
-        {
-          "file": "apps/web/components/ui/Label.tsx",
-          "hash": "1589990455062969067",
-          "deps": [
-            "npm:react",
-            "npm:@/lib/utils"
-          ]
-        },
-        {
-          "file": "apps/web/components/ui/LoadingSpinner.tsx",
-          "hash": "934046582910253337",
-          "deps": [
-            "npm:@/lib/types"
-          ]
-        },
-        {
-          "file": "apps/web/components/ui/index.ts",
-          "hash": "13793720439151342479"
-        },
-        {
-          "file": "apps/web/components/ui/tabs.tsx",
-          "hash": "7263398466955344927",
-          "deps": [
-            "npm:react",
-            "npm:@/lib/utils"
-          ]
-        },
-        {
-          "file": "apps/web/hooks/index.ts",
-          "hash": "6839286336751751030"
-        },
-        {
-          "file": "apps/web/hooks/useApiCall.ts",
-          "hash": "13544138265362905404",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/web/hooks/useAsyncData.ts",
-          "hash": "10334418658756899059",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/web/hooks/useDebounce.ts",
-          "hash": "7418977907128029009",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/web/hooks/useLocalStorage.ts",
-          "hash": "4751601270316294012",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/web/lib/logger.ts",
-          "hash": "18132430074129311987"
-        },
-        {
-          "file": "apps/web/lib/mock.ts",
-          "hash": "15081323363680195459",
-          "deps": [
-            "npm:@skypark/shared/types"
-          ]
-        },
-        {
-          "file": "apps/web/lib/mockData.ts",
-          "hash": "9670736246805091288",
-          "deps": [
-            "npm:@skypark/shared/types"
-          ]
-        },
-        {
-          "file": "apps/web/lib/types.ts",
-          "hash": "8045301359670721813"
-        },
-        {
-          "file": "apps/web/lib/utils.ts",
-          "hash": "12738667862952920385",
-          "deps": [
-            "npm:clsx",
-            "npm:tailwind-merge"
-          ]
-        },
-        {
-          "file": "apps/web/next-env.d.ts",
-          "hash": "10054213917412045845"
-        },
-        {
-          "file": "apps/web/next.config.js",
-          "hash": "11643506752874212828"
-        },
-        {
-          "file": "apps/web/package.json",
-          "hash": "9632507913674813182",
-          "deps": [
-            "npm:@hookform/resolvers",
-            "npm:@next/third-parties",
-            "npm:@radix-ui/react-slot",
-            "npm:class-variance-authority",
-            "npm:clsx",
-            "npm:date-fns",
-            "npm:lucide-react",
-            "npm:next",
-            "npm:react",
-            "npm:react-dom",
-            "npm:react-hook-form",
-            "npm:tailwind-merge",
-            "npm:zod",
-            "npm:zustand",
-            "npm:@playwright/test",
-            "npm:@tailwindcss/forms",
-            "npm:@tailwindcss/typography",
-            "npm:@testing-library/jest-dom",
-            "npm:@testing-library/react",
-            "npm:@testing-library/user-event",
-            "npm:@types/node",
-            "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:@typescript-eslint/eslint-plugin",
-            "npm:@typescript-eslint/parser",
-            "npm:@vitejs/plugin-react",
-            "npm:autoprefixer",
-            "npm:eslint",
-            "npm:eslint-config-next",
-            "npm:eslint-config-prettier",
-            "npm:jsdom",
-            "npm:postcss",
-            "npm:prettier",
-            "npm:tailwindcss",
-            "npm:typescript",
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "apps/web/postcss.config.js",
-          "hash": "12914707118528919400"
-        },
-        {
-          "file": "apps/web/project.json",
-          "hash": "18193815666883390675"
-        },
-        {
-          "file": "apps/web/public/favicon.ico",
-          "hash": "2560269421859972101"
-        },
-        {
-          "file": "apps/web/public/favicon.svg",
-          "hash": "2560269421859972101"
-        },
-        {
-          "file": "apps/web/public/manifest.json",
-          "hash": "7213822866289124814"
-        },
-        {
-          "file": "apps/web/public/sw.js",
-          "hash": "7811775673472282962"
-        },
-        {
-          "file": "apps/web/services/adminService.ts",
-          "hash": "917573503307173317",
-          "deps": [
-            "npm:@/lib/utils"
-          ]
-        },
-        {
-          "file": "apps/web/services/bookingService.ts",
-          "hash": "7337973433378817627",
-          "deps": [
-            "npm:@/lib/utils"
-          ]
-        },
-        {
-          "file": "apps/web/services/crmService.ts",
-          "hash": "10839770523983323409",
-          "deps": [
-            "npm:@/lib/utils"
-          ]
-        },
-        {
-          "file": "apps/web/services/notificationService.ts",
-          "hash": "9307686796343326069",
-          "deps": [
-            "npm:@/lib/utils"
-          ]
-        },
-        {
-          "file": "apps/web/services/parkService.mock.ts",
-          "hash": "3539880863632079625",
-          "deps": [
-            "npm:@skypark/shared/types"
-          ]
-        },
-        {
-          "file": "apps/web/services/parkService.ts",
-          "hash": "3485805671871446029",
-          "deps": [
-            "npm:@skypark/shared/types"
-          ]
-        },
-        {
-          "file": "apps/web/services/paymentService.ts",
-          "hash": "6466319894309925741",
-          "deps": [
-            "npm:@/lib/utils"
-          ]
-        },
-        {
-          "file": "apps/web/services/ticketService.ts",
-          "hash": "17204769682319892522",
-          "deps": [
-            "npm:@/lib/utils"
-          ]
-        },
-        {
-          "file": "apps/web/stores/useAuthStore.ts",
-          "hash": "5645112076858451608",
-          "deps": [
-            "npm:zustand"
-          ]
-        },
-        {
-          "file": "apps/web/tailwind.config.js",
-          "hash": "14101510937618815737",
-          "deps": [
-            "npm:@tailwindcss/forms",
-            "npm:@tailwindcss/typography"
-          ]
-        },
-        {
-          "file": "apps/web/tsconfig.json",
-          "hash": "6373975104449039859"
-        },
-        {
-          "file": "apps/web/tsconfig.tsbuildinfo",
-          "hash": "15797041294878982248"
-        }
-      ]
-    }
+    "projectFileMap": {}
   }
 }
