@@ -8,7 +8,7 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "ESNext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -27,7 +27,8 @@
       "@/stores/*": ["./stores/*"],
       "@/services/*": ["./services/*"],
       "@/app/*": ["./app/*"],
-      "@/types/*": ["./types/*"]
+      "@/types/*": ["./types/*"],
+      "@/types": ["./types/index"]
     },
     // Type checking - смягченные настройки для продакшена
     "noUnusedLocals": false,
