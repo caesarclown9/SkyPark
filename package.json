@@ -1,0 +1,87 @@
+{
+  "name": "skypark",
+  "version": "1.0.0",
+  "description": "Digital platform for Sky Park entertainment centers",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "powershell -Command \"Set-Location apps/web; npm run dev\"",
+    "build": "powershell -Command \"Set-Location packages/shared; npm run build; Set-Location ../../apps/web; npm run build\"",
+    "build:shared": "powershell -Command \"Set-Location packages/shared; npm run build\"",
+    "build:netlify": "powershell -Command \"Set-Location packages/shared; npm run build; Set-Location ../../apps/web; npm run build:netlify\"",
+    "test": "powershell -Command \"Set-Location apps/web; npm test\"",
+    "lint": "powershell -Command \"Set-Location apps/web; npm run lint\"",
+    "lint:fix": "powershell -Command \"Set-Location apps/web; npm run lint:fix\"",
+    "type-check": "powershell -Command \"Set-Location packages/shared; npm run build; Set-Location ../../apps/web; npm run type-check\"",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "docker:logs": "docker compose logs -f",
+    "db:migrate": "docker compose exec postgres psql -U skypark_user -d skypark_db -f /docker-entrypoint-initdb.d/migrations/001_initial_schema.up.sql",
+    "db:rollback": "docker compose exec postgres psql -U skypark_user -d skypark_db -f /docker-entrypoint-initdb.d/migrations/001_initial_schema.down.sql",
+    "db:shell": "docker compose exec postgres psql -U skypark_user -d skypark_db",
+    "db:reset": "docker compose down postgres; docker volume rm skypark_postgres_data; docker compose up -d postgres",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@nx/js": "^21.2.2",
+    "@nx/linter": "^19.8.4",
+    "@nx/next": "^21.2.2",
+    "@nx/workspace": "^21.2.2",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "nx": "^17.3.2",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3",
+    "vitepress": "^1.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{md,json}": [
+      "prettier --write"
+    ],
+    "*.go": [
+      "gofmt -s -w"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caesarclown9/SkyPark.git"
+  },
+  "keywords": [
+    "entertainment",
+    "ticketing",
+    "qr-codes",
+    "kyrgyzstan",
+    "pwa"
+  ],
+  "author": "Sky Park Development Team",
+  "license": "PROPRIETARY",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

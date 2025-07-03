@@ -1,0 +1,60 @@
+# Dependencies
+node_modules/
+vendor/
+*/node_modules/
+*/vendor/
+
+# Production builds
+.next/
+out/
+dist/
+build/
+*.exe
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Go specific
+*.test
+*.out
+go.sum
+
+# Cache
+.cache/
+.eslintcache
+.tsbuildinfo
+
+# Docker
+docker-compose.override.yml
+
+# Uploads
+uploads/
+public/uploads/
+
+# Backup files
+*.backup
+*.bak
+
+# Test coverage
+coverage/
+test-results/
+playwright-report/
+
+# Generated files
+generated/
+auto-generated/
+ 

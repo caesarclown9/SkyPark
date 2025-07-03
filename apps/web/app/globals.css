@@ -1,0 +1,437 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 207.2 96% 56%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 207.2 96% 56%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 207.2 96% 56%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 207.2 96% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
+  body {
+    @apply bg-white text-gray-900;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Для улучшения читаемости кириллицы */
+  body {
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Улучшенные стили для фокуса */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-sky-500 ring-offset-2;
+  }
+
+  /* Базовые стили для кнопок */
+  button {
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2;
+  }
+
+  /* Улучшенная прокрутка */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-md;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+  }
+
+  /* Стили для модальных окон */
+  .modal-overlay {
+    @apply fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4;
+  }
+
+  .modal-content {
+    @apply bg-white rounded-lg shadow-xl max-w-md w-full max-h-[90vh] overflow-y-auto;
+  }
+
+  /* Стили для уведомлений */
+  .toast {
+    @apply fixed top-4 right-4 z-50 bg-white border border-gray-200 rounded-lg shadow-lg p-4 max-w-sm;
+  }
+
+  .toast.success {
+    @apply border-green-200 bg-green-50;
+  }
+
+  .toast.error {
+    @apply border-red-200 bg-red-50;
+  }
+
+  .toast.warning {
+    @apply border-yellow-200 bg-yellow-50;
+  }
+
+  .toast.info {
+    @apply border-blue-200 bg-blue-50;
+  }
+
+  /* Анимации */
+  .fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .slide-up {
+    animation: slideUp 0.3s ease-out;
+  }
+
+  .spin {
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Стили для QR кодов */
+  .qr-code {
+    @apply bg-white p-4 rounded-lg shadow-sm border;
+  }
+
+  /* Стили для билетов */
+  .ticket-card {
+    @apply bg-gradient-to-br from-white to-gray-50 border border-gray-200 rounded-lg p-6 shadow-sm;
+  }
+
+  /* Адаптивные утилиты */
+  .container-responsive {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Стили для форм */
+  .form-group {
+    @apply space-y-2;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-gray-700;
+  }
+
+  .form-input {
+    @apply block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+  }
+
+  .form-error {
+    @apply text-sm text-red-600;
+  }
+
+  .form-help {
+    @apply text-sm text-gray-500;
+  }
+
+  /* Стили для статистических карточек */
+  .stats-card {
+    @apply bg-white rounded-lg border border-gray-200 p-6 shadow-sm;
+  }
+
+  .stats-value {
+    @apply text-2xl font-bold text-gray-900;
+  }
+
+  .stats-label {
+    @apply text-sm font-medium text-gray-500;
+  }
+
+  .stats-change {
+    @apply text-sm font-medium;
+  }
+
+  .stats-change.positive {
+    @apply text-green-600;
+  }
+
+  .stats-change.negative {
+    @apply text-red-600;
+  }
+
+  /* Стили для навигации */
+  .nav-link {
+    @apply text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors;
+  }
+
+  .nav-link.active {
+    @apply text-blue-600 bg-blue-50;
+  }
+
+  /* Утилиты для безопасных областей (mobile) */
+  .safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .safe-left {
+    padding-left: env(safe-area-inset-left);
+  }
+
+  .safe-right {
+    padding-right: env(safe-area-inset-right);
+  }
+}
+
+/* ===========================================
+   🎨 Sky Park Design System
+   =========================================== */
+
+/* Brand Gradients */
+.bg-skypark-gradient {
+  @apply bg-gradient-to-br from-pink-50 via-purple-50 to-sky-50;
+}
+
+.bg-skypark-card {
+  @apply bg-white/80 backdrop-blur-sm border border-white/20 shadow-xl;
+}
+
+.bg-skypark-hero {
+  @apply bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500;
+}
+
+/* Brand Text */
+.text-skypark-gradient {
+  @apply bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 bg-clip-text text-transparent;
+}
+
+.text-skypark-primary {
+  @apply text-purple-600;
+}
+
+.text-skypark-secondary {
+  @apply text-pink-500;
+}
+
+/* Brand Buttons */
+.btn-skypark-primary {
+  @apply bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200;
+}
+
+.btn-skypark-secondary {
+  @apply bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200;
+}
+
+.btn-skypark-outline {
+  @apply border-2 border-purple-400 text-purple-600 hover:bg-purple-50 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 font-semibold;
+}
+
+/* Page Layouts */
+.skypark-page {
+  @apply min-h-screen bg-skypark-gradient;
+}
+
+.skypark-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8;
+}
+
+/* Cards & Components */
+.skypark-card {
+  @apply bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl border border-white/20 p-6 hover:scale-[1.02] transition-all duration-300;
+}
+
+.skypark-card-compact {
+  @apply bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-white/20 p-4 hover:scale-[1.01] transition-all duration-200;
+}
+
+.skypark-card-highlight {
+  @apply bg-gradient-to-br from-yellow-50 via-pink-50 to-purple-50 border-2 border-purple-200 rounded-3xl shadow-xl p-6 hover:scale-[1.02] transition-all duration-300;
+}
+
+/* Stats & Metrics */
+.skypark-stat-card {
+  @apply bg-white/80 backdrop-blur rounded-3xl p-6 shadow-xl hover:scale-105 transition-transform duration-300;
+}
+
+.skypark-stat-purple {
+  @apply border-2 border-purple-200;
+}
+
+.skypark-stat-pink {
+  @apply border-2 border-pink-200;
+}
+
+.skypark-stat-blue {
+  @apply border-2 border-blue-200;
+}
+
+.skypark-stat-green {
+  @apply border-2 border-green-200;
+}
+
+/* Forms */
+.skypark-input {
+  @apply w-full px-4 py-3 rounded-2xl border-2 border-gray-200 focus:border-purple-400 focus:ring-4 focus:ring-purple-100 transition-all duration-200 bg-white/80 backdrop-blur-sm;
+}
+
+.skypark-select {
+  @apply w-full px-4 py-3 rounded-2xl border-2 border-gray-200 focus:border-purple-400 focus:ring-4 focus:ring-purple-100 transition-all duration-200 bg-white/80 backdrop-blur-sm;
+}
+
+/* Tabs */
+.skypark-tabs {
+  @apply bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-white/20 p-2;
+}
+
+.skypark-tab {
+  @apply flex items-center px-6 py-3 rounded-xl text-gray-600 hover:text-purple-600 hover:bg-purple-50 transition-all duration-200 font-medium;
+}
+
+.skypark-tab.active {
+  @apply bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg;
+}
+
+/* Badges & Status */
+.skypark-badge {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.skypark-badge-success {
+  @apply bg-green-100 text-green-700 border border-green-200;
+}
+
+.skypark-badge-warning {
+  @apply bg-yellow-100 text-yellow-700 border border-yellow-200;
+}
+
+.skypark-badge-error {
+  @apply bg-red-100 text-red-700 border border-red-200;
+}
+
+.skypark-badge-primary {
+  @apply bg-purple-100 text-purple-700 border border-purple-200;
+}
+
+/* Animations */
+.skypark-bounce {
+  animation: skypark-bounce 2s infinite;
+}
+
+.skypark-float {
+  animation: skypark-float 3s ease-in-out infinite;
+}
+
+@keyframes skypark-bounce {
+  0%, 20%, 53%, 80%, 100% {
+    transform: translate3d(0,0,0);
+  }
+  40%, 43% {
+    transform: translate3d(0,-8px,0);
+  }
+  70% {
+    transform: translate3d(0,-4px,0);
+  }
+  90% {
+    transform: translate3d(0,-2px,0);
+  }
+}
+
+@keyframes skypark-float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Loading States */
+.skypark-loading {
+  @apply inline-block animate-spin rounded-full h-6 w-6 border-2 border-purple-200 border-t-purple-600;
+}
+
+/* Utility Classes */
+.skypark-glass {
+  @apply bg-white/10 backdrop-blur-md border border-white/20;
+}
+
+.skypark-shadow-soft {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.skypark-shadow-glow {
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.3);
+} 

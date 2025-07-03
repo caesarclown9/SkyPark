@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx type-check web",
+    "startTime": "2025-07-03T14:11:25.522Z",
+    "endTime": "2025-07-03T14:11:39.136Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "web:type-check",
+      "target": "type-check",
+      "projectName": "web",
+      "hash": "17525653926546140448",
+      "startTime": "2025-07-03T14:11:25.547Z",
+      "endTime": "2025-07-03T14:11:39.134Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

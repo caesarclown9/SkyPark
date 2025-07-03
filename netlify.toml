@@ -1,0 +1,44 @@
+[build]
+  # Указываем что нужно собирать веб-приложение
+  base = "apps/web"
+  publish = "apps/web/.next"
+  command = "npm run build:netlify"
+
+[build.environment]
+  # Node.js версия
+  NODE_VERSION = "18"
+  # Включаем экспорт статики
+  NEXT_PUBLIC_NETLIFY_DEPLOY = "true"
+  # Demo режим для Netlify
+  NEXT_PUBLIC_DEMO_MODE = "true"
+
+# Настройки для SPA маршрутизации Next.js
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Настройки кеширования
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Настройки безопасности
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "origin-when-cross-origin"
+    X-XSS-Protection = "1; mode=block" 
